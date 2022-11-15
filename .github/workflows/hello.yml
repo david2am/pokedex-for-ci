@@ -6,9 +6,8 @@ on:
       - main
 
 jobs:
-  job-name:
+  job_name:
     runs-on: ubuntu-18.04
     steps:
       - name: Echo the message
         run: echo "Hello CI"
-        
