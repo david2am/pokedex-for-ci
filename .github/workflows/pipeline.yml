@@ -19,3 +19,7 @@ jobs:
         run: npm i --no-audit --no-found --no-optional
       - name: Lint
         run: npm run eslint
+      - name: Build
+        run: npm run build
+      - name: Tests
+        run: npm run test
