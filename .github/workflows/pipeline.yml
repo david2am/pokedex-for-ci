@@ -23,3 +23,9 @@ jobs:
         run: npm run build
       - name: Tests
         run: npm run test
+      - name: E2E Tests
+        uses: actions/checkout@v2
+        with:
+          command: npm run test:e2e
+          start: npm run start-test
+          wait-on: http://localhost:5000
